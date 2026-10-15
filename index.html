@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dion Rahmadan — Personal Portfolio</title>
+  <meta
+    name="description"
+    content="Personal portfolio of Dion Rahmadan, a Computer Systems student at Budi Luhur University interested in robotics, embedded systems, and web development."
+  />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    rel="stylesheet"
+  />
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <!-- 01 / NAVBAR -->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg brutal-nav" aria-label="Navigasi utama">
+      <div class="container brutal-container">
+        <a class="navbar-brand brand-mark" href="#home" aria-label="Dion Rahmadan — kembali ke atas">
+          <span class="brand-box" aria-hidden="true">D.</span>
+          <span class="brand-text">DION<span class="brand-dot">_</span></span>
+        </a>
+        <button
+          class="navbar-toggler brutal-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Buka/tutup navigasi"
+        >
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-brutal btn-brutal-sm" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 02 / HERO -->
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="container brutal-container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-12 col-lg-7">
+            <p class="eyebrow"><span class="eyebrow-tag">PORTFOLIO — 2026</span> COMPUTER SYSTEMS STUDENT</p>
+            <h1 id="hero-heading" class="display-hero">
+              BUILDING<br />
+              SMALL <span class="hl hl-lime">ROBOTS.</span><br />
+              LEARNING<br />
+              BY <span class="hl hl-orange">DOING.</span>
+            </h1>
+            <p class="lead hero-sub">
+              Halo, saya <strong>Dion Rahmadan</strong> — mahasiswa Sistem Komputer di
+              Budi Luhur University. Saya suka <strong>bikin robot</strong>: merakit,
+              memprogram, lalu memperbaiki sampai benar-benar jalan.
+            </p>
+            <div class="d-flex flex-wrap gap-3 hero-cta">
+              <a class="btn btn-brutal" href="#projects">
+                View Projects <i class="bi bi-arrow-down-right" aria-hidden="true"></i>
+              </a>
+              <a class="btn btn-brutal btn-brutal-ghost" href="#contact">
+                Contact Me <i class="bi bi-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+            <ul class="hero-meta list-unstyled" aria-label="Info singkat">
+              <li><i class="bi bi-geo-alt" aria-hidden="true"></i> Indonesia</li>
+              <li><i class="bi bi-mortarboard" aria-hidden="true"></i> Sistem Komputer — Budi Luhur</li>
+              <li><span class="dot-live" aria-hidden="true"></span> Open to collaborate</li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-5">
+            <div class="hero-panel">
+              <div class="hero-panel-top">
+                <span>PROFILE.CARD</span>
+                <span aria-hidden="true">● ● ●</span>
+              </div>
+              <figure class="hero-photo-wrap">
+                <img
+                  src="assets/images/profile.jpg"
+                  alt="Foto formal Dion Rahmadan mengenakan jas hitam"
+                  class="hero-photo"
+                  width="600"
+                  height="750"
+                  fetchpriority="high"
+                />
+                <figcaption class="hero-sticker hero-sticker-photo" aria-hidden="true">★ HELLO!</figcaption>
+              </figure>
+              <dl class="hero-card-meta">
+                <div><dt>NAME</dt><dd>Dion Rahmadan</dd></div>
+                <div><dt>FOCUS</dt><dd>Robotics / Embedded / Web</dd></div>
+                <div><dt>BASE</dt><dd>Arduino · ESP32 · Web</dd></div>
+              </dl>
+              <div class="hero-blocks" aria-hidden="true">
+                <span class="hb hb-lime"></span>
+                <span class="hb hb-orange"></span>
+                <span class="hb hb-purple"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>ROBOTICS — EMBEDDED — ARDUINO — ESP32 — SENSORS — HTML — CSS — BOOTSTRAP — JAVASCRIPT — FIGMA —&nbsp;</span>
+          <span>ROBOTICS — EMBEDDED — ARDUINO — ESP32 — SENSORS — HTML — CSS — BOOTSTRAP — JAVASCRIPT — FIGMA —&nbsp;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 / ABOUT -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container brutal-container">
+        <p class="section-index">01 / ABOUT</p>
+        <div class="row g-4">
+          <div class="col-12 col-lg-6">
+            <h2 id="about-heading" class="section-title">Anak Sistem Komputer yang betah ngoprek hardware.</h2>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="brutal-card">
+              <p>
+                Saya <strong>Dion Rahmadan</strong>, mahasiswa <strong>Sistem Komputer</strong> di
+                <strong>Budi Luhur University</strong>. Minat utama saya adalah
+                <strong>robotik dan sistem embedded</strong> — dari merakit chassis, wiring sensor,
+                sampai nulis programnya.
+              </p>
+              <p>
+                Selain ngoprek hardware, saya juga belajar dasar web (HTML, CSS, JavaScript,
+                Bootstrap) untuk membuat halaman portfolio seperti ini, plus desain antarmuka
+                sederhana dengan Figma.
+              </p>
+              <p class="mb-0">
+                Prinsip saya: robot tidak harus canggih dulu — yang penting jalan, rapi kabelnya,
+                dan kodenya bisa dijelaskan.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row g-3 mt-1">
+          <div class="col-12 col-md-4">
+            <div class="mini-stat"><span class="mini-num">03</span><span class="mini-label">FOCUS AREAS</span></div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mini-stat mini-stat-lime"><span class="mini-num">09+</span><span class="mini-label">TOOLS &amp; TECH LEARNED</span></div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mini-stat mini-stat-dark"><span class="mini-num">100%</span><span class="mini-label">HAND-CODED, NO TEMPLATE</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 / SKILLS -->
+    <section id="skills" class="section section-alt" aria-labelledby="skills-heading">
+      <div class="container brutal-container">
+        <p class="section-index">02 / SKILLS</p>
+        <h2 id="skills-heading" class="section-title">Skills &amp; tech stack.</h2>
+        <p class="section-sub">Hanya yang benar-benar saya pelajari. Label <code>LEARNING</code> berarti masih tahap belajar.</p>
+        <div class="row g-3 g-lg-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="brutal-card skill-card h-100">
+              <h3><span class="skill-no">S.01</span> Programming</h3>
+              <ul class="tag-list">
+                <li>C/C++ dasar <span class="learn">LEARNING</span></li>
+                <li>JavaScript <span class="learn">LEARNING</span></li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="brutal-card skill-card skill-card-lime h-100">
+              <h3><span class="skill-no">S.02</span> Web Development</h3>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="brutal-card skill-card h-100">
+              <h3><span class="skill-no">S.03</span> Robotics / Embedded</h3>
+              <ul class="tag-list">
+                <li>Arduino <span class="learn">LEARNING</span></li>
+                <li>ESP32 &amp; sensor dasar <span class="learn">LEARNING</span></li>
+                <li>Wiring &amp; motor driver</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="brutal-card skill-card skill-card-orange h-100">
+              <h3><span class="skill-no">S.04</span> UI/UX Design</h3>
+              <ul class="tag-list">
+                <li>Figma</li>
+                <li>Wireframing <span class="learn">LEARNING</span></li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="brutal-card skill-card h-100">
+              <h3><span class="skill-no">S.05</span> Tools &amp; Workflow</h3>
+              <ul class="tag-list">
+                <li>Arduino IDE</li>
+                <li>VS Code</li>
+                <li>Git</li>
+              </ul>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="brutal-card skill-card skill-card-dark h-100">
+              <h3><span class="skill-no">S.06</span> Currently Learning</h3>
+              <p class="mb-0">Kalibrasi sensor, PWM motor control, baca datasheet, dan merapikan dokumentasi proyek robot.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 / PROJECTS -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container brutal-container">
+        <p class="section-index">03 / PROJECTS</p>
+        <div class="d-flex flex-wrap align-items-end justify-content-between gap-3 mb-4">
+          <h2 id="projects-heading" class="section-title mb-0">Selected projects.</h2>
+          <p class="section-sub mb-0">Proyek latihan — dideskripsikan apa adanya, tanpa link palsu.</p>
+        </div>
+        <div class="row g-3 g-lg-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="brutal-card project-card h-100">
+              <div class="project-thumb project-thumb-1" role="img" aria-label="Thumbnail ilustrasi halaman portfolio"><span aria-hidden="true">P.01</span></div>
+              <h3>Personal Portfolio Landing Page</h3>
+              <p>Halaman CV satu halaman yang sedang kamu buka ini. Dibangun dengan HTML, CSS custom, dan Bootstrap 5 untuk layout responsif.</p>
+              <ul class="tag-list tag-list-sm" aria-label="Teknologi">
+                <li>HTML</li><li>CSS</li><li>Bootstrap 5</li><li>JS</li>
+              </ul>
+              <div class="project-actions">
+                <span class="project-note"><i class="bi bi-info-circle" aria-hidden="true"></i> Live: halaman ini</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="brutal-card project-card project-card-featured h-100">
+              <div class="project-thumb project-thumb-2" role="img" aria-label="Thumbnail ilustrasi robot line follower"><span aria-hidden="true">P.02</span></div>
+              <h3>Line Follower Robot — Practice Build</h3>
+              <p>Latihan robot pengikut garis: sensor IR, driver motor, dan tuning kecepatan. Fokus pada wiring rapi dan kode yang bisa dijelaskan.</p>
+              <ul class="tag-list tag-list-sm" aria-label="Teknologi">
+                <li>Arduino</li><li>Sensor IR</li><li>Motor driver</li>
+              </ul>
+              <div class="project-actions">
+                <span class="project-note"><i class="bi bi-hammer" aria-hidden="true"></i> Practice build — dokumentasi menyusul</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="brutal-card project-card h-100">
+              <div class="project-thumb project-thumb-3" role="img" aria-label="Thumbnail ilustrasi monitoring IoT"><span aria-hidden="true">P.03</span></div>
+              <h3>IoT Suhu Mini — Practice Build</h3>
+              <p>Latihan baca sensor suhu dan menampilkannya secara berkala. Melatih dasar ESP32, wiring sensor, dan pembacaan data.</p>
+              <ul class="tag-list tag-list-sm" aria-label="Teknologi">
+                <li>ESP32</li><li>Sensor</li><li>Arduino IDE</li>
+              </ul>
+              <div class="project-actions">
+                <span class="project-note"><i class="bi bi-cpu" aria-hidden="true"></i> Practice build — foto menyusul</span>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="fine-print mt-4">
+          <i class="bi bi-shield-check" aria-hidden="true"></i>
+          Tidak ada tombol repo/demo palsu di sini — tombol hanya ditampilkan jika link-nya benar-benar ada.
+        </p>
+      </div>
+    </section>
+
+    <!-- 06 / EDUCATION -->
+    <section id="education" class="section section-dark" aria-labelledby="education-heading">
+      <div class="container brutal-container">
+        <p class="section-index section-index-light">04 / EDUCATION</p>
+        <h2 id="education-heading" class="section-title section-title-light">Learning journey.</h2>
+        <div class="row g-3 g-lg-4 mt-1">
+          <div class="col-12 col-lg-6">
+            <article class="edu-card">
+              <p class="edu-tag">CURRENT</p>
+              <h3>Sistem Komputer — Program Sarjana</h3>
+              <p class="edu-school">Budi Luhur University</p>
+              <p class="mb-0">Status: mahasiswa aktif. Fokus: robotik, sistem embedded, dan dasar pengembangan web. Detail angkatan/semester ditambahkan hanya jika boleh dipublikasi.</p>
+            </article>
+          </div>
+          <div class="col-12 col-lg-6">
+            <ul class="edu-list list-unstyled mb-0">
+              <li><span class="edu-year">NOW</span><span>Belajar Bootstrap responsif + deploy statis (proyek ini)</span></li>
+              <li><span class="edu-year">ONGOING</span><span>Arduino: sensor, motor driver, PWM dasar</span></li>
+              <li><span class="edu-year">ONGOING</span><span>ESP32 &amp; baca sensor untuk mini IoT</span></li>
+              <li><span class="edu-year">NEXT</span><span>Dokumentasi proyek robot yang rapi</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 / CONTACT -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container brutal-container">
+        <p class="section-index">05 / CONTACT</p>
+        <div class="contact-panel">
+          <div class="row g-4 align-items-center">
+            <div class="col-12 col-lg-7">
+              <h2 id="contact-heading" class="section-title">Mau bahas robot, tugas, atau proyek bareng?</h2>
+              <p class="section-sub">Cara tercepat: email. Untuk lihat aktivitas harian, mampir ke Instagram saya.</p>
+            </div>
+            <div class="col-12 col-lg-5">
+              <div class="d-grid gap-3">
+                <a class="btn btn-brutal btn-brutal-lg" href="mailto:dionrahmadan94@gmail.com?subject=Halo%20Dion%20—%20dari%20portfoliomu">
+                  <i class="bi bi-envelope-fill" aria-hidden="true"></i> dionrahmadan94@gmail.com
+                </a>
+                <div class="d-flex flex-wrap gap-2">
+                  <a class="btn btn-brutal btn-brutal-ghost flex-fill" href="https://www.instagram.com/dyonermdhn/" target="_blank" rel="noopener">
+                    <i class="bi bi-instagram" aria-hidden="true"></i> Instagram
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 08 / FOOTER -->
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container brutal-container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <p class="mb-0 footer-brand"><span class="brand-box brand-box-sm" aria-hidden="true">D.</span> DION RAHMADAN © <span id="year">2026</span> — Built by hand. No template.</p>
+        <ul class="list-unstyled d-flex gap-2 mb-0 footer-links">
+          <li><a href="https://www.instagram.com/dyonermdhn/" target="_blank" rel="noopener" aria-label="Instagram Dion Rahmadan"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="mailto:dionrahmadan94@gmail.com" aria-label="Email Dion Rahmadan"><i class="bi bi-envelope" aria-hidden="true"></i></a></li>
+          <li><a href="#home" aria-label="Kembali ke atas"><i class="bi bi-arrow-up" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button id="toTop" class="to-top" type="button" aria-label="Kembali ke atas" hidden>
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
